@@ -1,0 +1,24 @@
+{
+  "name": "monorepo",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env TURBO_UI=1 turbo dev",
+    "build": "cross-env TURBO_UI=1 turbo build",
+    "start": "cross-env TURBO_UI=1 turbo start",
+    "clean": "rimraf packages/**/dist apps/**/dist packages/**/node_modules apps/**/node_modules .turbo packages/**/.turbo apps/**/.turbo apps/**/.vite node_modules/"
+  },
+  "packageManager": "pnpm@10.20.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@workspace/eslint-config": "workspace:*",
+    "@workspace/typescript-config": "workspace:*",
+    "cross-env": "^10.1.0",
+    "rimraf": "^6.1.0",
+    "turbo": "^2.6.0",
+    "typescript": "^5.9.3"
+  }
+}

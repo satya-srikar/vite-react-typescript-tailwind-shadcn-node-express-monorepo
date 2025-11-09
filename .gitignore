@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+pnpm-lock.yaml
+
+# Build output
+dist/
+apps/**/dist/
+packages/**/dist/
+.turbo/
+apps/**/.turbo/
+packages/**/.turbo/
+
+# Logs
+*.log
+pnpm-debug.log*
+npm-debug.log*
+yarn-error.log*
+
+# Editor caches
+.DS_Store
+.idea/
+.vscode/
+
+# Environment files
+.env
+.env.*.local
+
